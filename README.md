@@ -1,1 +1,1 @@
-o modo escuro é alterado atraves de um switcn, o tema selecionado é salvo no armazenamento local, para o tema salvo já ser aplicado assim que a página for carregada.
+o modo escuro é alterado atraves de um switch, o tema selecionado é salvo no armazenamento local para ser aplicado assim que a página for carregada.
