@@ -1,0 +1,69 @@
+@charset "UTF-8"
+{}
+body{
+  font-family: Arial, Sans-Serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+  transition: background-color .4s, color .4s;
+  user-select: none;
+}
+body.dark-mode{
+  background-color: #121212;
+  color: white;
+}
+/*Estilo do container do switch*/
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/*Esconde o input original*/
+.switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/*Estilo do slider*/
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before{
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider{
+  background-color:#2196f3;
+}
+input:checked + .slider:before{
+  transform: translateX(26px);
+}
+/*Estilo arredondado*/
+.slider.round{
+  border-radius: 34px;
+}
+.slider.round:before{
+  border-radius: 50%;
+}
+p{
+  font-size: 2em;
+  font-weight: bold;
+}
